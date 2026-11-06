@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 # cs300-project-portfolio
 My personal projects portfolio
-=======
 # Portfolio Starter
 
 This folder is an optional starting point for Individual Project 1: Professional Portfolio.
@@ -53,4 +51,3 @@ Your repository holds only your site files and this README.
 Your video goes only to D2L.
 
 Questions? Email dmandloi@neiu.edu.
->>>>>>> 77542d8 (Initial commit)
