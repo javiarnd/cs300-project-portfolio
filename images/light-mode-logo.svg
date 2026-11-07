@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 787.311 190.157">
+  <defs>
+    <style>
+      .cls-1{fill:#d76a38;stroke:#000000;stroke-miterlimit:10}
+      .cls-2{fill:#c53829;stroke:#000000;stroke-miterlimit:10}
+      .cls-3{fill:#f5c058;stroke:#000000;stroke-miterlimit:10}
+      .cls-4{fill:#333333;stroke:#ffffff;stroke-miterlimit:10}
+    </style>
+  </defs>
+  <title>Asset 2</title>
+  <g id="Asset_2" data-name="Asset 2">
+    <rect x="0.5" y="66.243" width="633.027" height="57.015" class="cls-1"/>
+    <rect x="0.5" y="0.58" width="620.384" height="57.015" class="cls-2"/>
+    <rect x="0.5" y="132.642" width="596.336" height="57.015" class="cls-3"/>
+    <g>
+      <path d="M786.657 189.657 L735.336 0.58 L703.298 0.58 L571.288 189.657 L616.082 189.657 L650.79 140.789 L728.81 140.789 L741.863 189.657 Z M723.244 104.079 L676.373 104.079 L711.971 47.023 Z" class="cls-4"/>
+    </g>
+    <path d="M597.195 109.226 L614.644 0.501 L656.226 0.646 L638.528 110.631 C629.715 163.315 599.626 189.657 565.283 189.657 C534.283 189.657 512.401 167.53 512.401 135.919 C512.401 132.758 512.705 128.544 513.009 123.626 L554.646 123.626 L554.95 126.085 C556.47 138.027 561.636 143.295 571.666 143.295 C585.342 143.295 593.548 132.407 597.195 109.226 Z" class="cls-4"/>
+  </g>
+</svg>

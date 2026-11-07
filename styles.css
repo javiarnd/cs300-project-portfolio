@@ -1,1 +1,52 @@
-/* Write your own styles here. */
+.portfolio-logo-container {
+    width: 80%;
+    height: auto;
+    animation: slideInFromLeft 4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateX(-4%);
+    opacity: 1;
+  }
+}
+
+.terminal-style-text {
+    font-family: 'Lucida Console', monospace;
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.terminal-user {
+    color: #333333; 
+}
+
+.terminal-command {
+    color: #1d2c90; 
+}
+
+.terminal-directory {
+    color: #c53829;
+}
+
+.blink-box {
+    animation: blink 1s steps(1, start) infinite;
+    display: inline-flex;
+    color: #333333;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 10%;
+  }
+}
