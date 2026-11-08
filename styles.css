@@ -1,7 +1,79 @@
+@font-face {
+    font-family: 'TeX Gyre Adventor';
+    src: url('fonts/texgyreadventor-regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TeX Gyre Adventor';
+    src: url('fonts/texgyreadventor-italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TeX Gyre Adventor';
+    src: url('fonts/texgyreadventor-bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TeX Gyre Adventor';
+    src: url('fonts/texgyreadventor-bolditalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+.google-sans-fontOne {
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "GRAD" 17;
+}
+
+
+.tiny5-duo-fontTwo {
+  font-family: "Tiny5 Duo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "BLED" 0,
+    "JITT" 0,
+    "ROND" 0;
+}
+
 body {
     background-color: rgba(237, 231, 225, 1);
     margin: 0;
     overflow-x: hidden;
+}
+
+main > section {
+    animation: fadeInDown 0.5s ease both;
+}
+
+main > section:nth-child(1) { animation-delay: 0.0s; }
+main > section:nth-child(2) { animation-delay: 0.1s; }
+main > section:nth-child(3) { animation-delay: 0.2s; }
+main > section:nth-child(4) { animation-delay: 0.3s; }
+main > section:nth-child(5) { animation-delay: 0.4s; }
+main > section:nth-child(6) { animation-delay: 0.5s; }
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .portfolio-logo-container {
@@ -77,11 +149,18 @@ body {
     color: #c6857e;
 }
 
-.blink-box { 
+.blink-box-nav { 
     display: inline-block;
     transform: translateY(-9%) translateX(-15%);
     animation: blink 1s steps(1, start) infinite;
     color: #c6857e;
+}
+
+.blink-box-nav.active { 
+    display: inline-block;
+    transform: translateY(-9%) translateX(-15%) scale(1.2);
+    animation: blink 1s steps(1, start) infinite;
+    color: #1d2c90;
 }
 
 @keyframes blink {
@@ -99,9 +178,9 @@ li {
 }
 
 a {
+    display: inline-block;
     color: #c53829;
-    text-decoration: none;
-}
+    text-decoration: none;}
 
 .main-nav ul {
     font-weight: bold;
@@ -111,7 +190,7 @@ a {
     margin: 0rem;
     padding: 0.5rem 0.5rem;
     line-height: 1.5rem;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .main-nav  {
@@ -123,6 +202,7 @@ a {
 
 .main-nav a:hover {
     transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
     color: #1d2c90;
 }
 
@@ -174,11 +254,49 @@ a {
         display: none;
     }
 
-    .main-nav {
+    .terminal-style-header {
         display: flex;
-        justify-content: flex-start;
-        align-items: center;
+        background-color: rgba(29, 44, 144, 0.2);
     }
+
+    .terminal-style-text-container {
+        background-color: transparent;
+        width: auto;
+    }
+
+    .main-nav {
+        flex: 1;
+        justify-content: flex-end;
+    }
+
+    .main-nav ul {
+        background-color: transparent;
+        width: auto;
+        display: flex;
+        gap: 1rem;
+        padding: 1rem 1rem;
+    }
+}
+
+#introduction {
+    margin: 0;
+    padding: .5rem 1rem;
+}
+
+.intro-name {
+    margin: 0;
+    padding: 0;
+    font-family: "Tiny5 Duo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 50,
+    "BLED" 0,
+    "JITT" 0,
+    "ROND" 0;
+    color: #333333;
+    justify-content: center;
 }
 
 

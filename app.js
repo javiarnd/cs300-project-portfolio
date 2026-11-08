@@ -11,4 +11,18 @@ document.querySelectorAll('#main-nav a').forEach(link => {
     menuToggle.classList.remove('active');
     mainNav.classList.remove("active");
   });
+})
+
+document.querySelectorAll('#main-nav a').forEach(link => {
+  const blinkBox = link.querySelector('.blink-box-nav');
+
+  if (blinkBox) {
+    link.addEventListener('mouseenter', () => {
+      blinkBox.classList.add('active');
+    });
+
+    link.addEventListener('mouseleave', () => {
+      blinkBox.classList.remove('active');
+    });
+  }
 });
