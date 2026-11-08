@@ -1,8 +1,14 @@
-/*
-  Write your own JavaScript interaction here.
+const menuToggle = document.getElementById('menu-toggle');
+const mainNav = document.getElementById('main-nav');
 
-  Choose one feature that helps your visitor, such as a mobile menu toggle,
-  a project filter, a light and dark theme toggle, expandable case studies,
-  or contact form validation. Make sure it works with the keyboard and
-  leaves no errors in the browser console.
-*/
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  mainNav.classList.toggle("active");
+})
+
+document.querySelectorAll('#main-nav a').forEach(link => {
+  link.addEventListener('click', () => {
+    menuToggle.classList.remove('active');
+    mainNav.classList.remove("active");
+  });
+});

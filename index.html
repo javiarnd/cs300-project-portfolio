@@ -7,8 +7,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="portfolio-logo-container">
+   <div class="portfolio-logo-container">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 787.311 190.157">
         <defs>
            <style>
@@ -30,6 +29,7 @@
     </g>
   </svg>
 </div>
+<header class="terminal-style-header">
 <div class="terminal-style-text-container">
 <h2 class="terminal-style-text">
   <span class="terminal-user">[javi_arnd]</span> 
@@ -37,26 +37,34 @@
   <span id="terminal-directory" class="terminal-directory">/portfolio</span>
   <span class="blink-box">❚</span>
 </h2>
-  <button id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-    <span class="hamburger-toggle">
-      ☰
-    </span>
-  </button>
+  <div id="menu-toggle">
+    <span class="hamburger-toggle"></span>
+    <span class="hamburger-toggle"></span>
+    <span class="hamburger-toggle"></span>
+  </div>
 </div>
-  <nav>
+  <nav id="main-nav" class="main-nav">
     <ul>
-      <li><a href="#introduction">Introduction</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#resume">Resume</a></li>
+      <li><a href="#introduction">Introduction</a><span class="blink-box">❚</span></li>
+      <li><a href="#about">About<span class="blink-box">❚</span></a></li>
+      <li><a href="#projects">Projects</a><span class="blink-box">❚</span></li>
+      <li><a href="#skills">Skills</a><span class="blink-box">❚</span></li>
+      <li><a href="#contact">Contact</a><span class="blink-box">❚</span></li>
+      <li><a href="#resume">Resume</a><span class="blink-box">❚</span></li>
     </ul>
   </nav>
 </header>
   <main>
     <section id="introduction">
-      <!-- Introduction: your name, a one-line headline, a short welcome, and a link to your work. -->
+    <!-- Introduction: your name, a one-line headline, a short welcome, and a link to your work. -->
+    <div class="intro-content">
+      <h1 class="intro-name">Javier Aranda</h1>
+        <p class="intro-headline">Computer Science Student & Software Developer <b>[B.S. Computer Science incoming...]</b></p>
+          <p class="intro-text-content">
+          Welcome to my portfolio! I specialize in building responsive web applications, object-oriented systems, and data-driven solutions. Explore my projects and technical background below.
+          </p>
+        <a href="#projects" class="intro-button">View My Work</a>
+      </div>
     </section>
     <section id="about">
       <!-- About: your interests, studies, and goals. No home address, phone number, or student ID. -->
