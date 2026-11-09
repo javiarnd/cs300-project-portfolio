@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <div class="portfolio-logo-container">
+  <div class="portfolio-logo-container">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 787.311 190.157">
         <defs>
            <style>
@@ -32,8 +32,8 @@
     <path d="M597.195 109.226 L614.644 0.501 L656.226 0.646 L638.528 110.631 C629.715 163.315 599.626 189.657 565.283 189.657 C534.283 189.657 512.401 167.53 512.401 135.919 C512.401 132.758 512.705 128.544 513.009 123.626 L554.646 123.626 L554.95 126.085 C556.47 138.027 561.636 143.295 571.666 143.295 C585.342 143.295 593.548 132.407 597.195 109.226 Z" class="cls-4"/>
     </g>
   </svg>
-</div>
-<header class="terminal-style-header">
+  </div>
+<header id="header-reference" class="terminal-style-header">
 <div class="terminal-style-text-container">
 <h2 class="terminal-style-text">
   <span class="terminal-user">[javi_arnd]</span> 
@@ -49,7 +49,7 @@
 </div>
   <nav id="main-nav" class="main-nav">
     <ul>
-      <li><a href="#introduction">Introduction<span class="blink-box-nav">❚</span></a></li>
+      <li><a href="#header-reference">Introduction<span class="blink-box-nav">❚</span></a></li>
       <li><a href="#about">About<span class="blink-box-nav">❚</span></a></li>
       <li><a href="#projects">Projects<span class="blink-box-nav">❚</span></a></li>
       <li><a href="#skills">Skills<span class="blink-box-nav">❚</span></a></li>
@@ -60,39 +60,118 @@
 </header>
   <main>
     <section id="introduction">
-    <!-- Introduction: your name, a one-line headline, a short welcome, and a link to your work. -->
       <h1 class="intro-name">Javier Aranda</h1>
-        <p class="intro-headline">Computer Science Student & Software Developer <b>[B.S. Computer Science incoming...]</b></p>
+            <br>&nbsp;<br>
+        <p class="intro-headline">Computer Science Student & Aspiring Software Developer <br><b>[B.S. Computer Science incoming 📟]</b><br></p>
+            <br>&nbsp;<br>
           <p class="intro-text-content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
-        <a href="#projects" class="intro-button">View My Work</a>
+        <a href="#projects" class="intro-button">▼ View My Work ▼</a>
     </section>
     <section id="about">
-    <!-- About: your interests, studies, and goals. No home address, phone number, or student ID. -->
-     <h2 class="about-subtitle">About</h2>
-      <p class="about-paragraph">
+     <h2 class="about-subtitle">//About</h2>
+      <p class="about-text-content">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         <br>&nbsp;<br>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </section>
     <section id="projects">
-      <!-- Projects: at least two work samples, each with a card and a short case study. -->
+     <h2 class="projects-subtitle">//Projects</h2>
+      <div class="project-card-container">
+        <span class="project-card">
+          <h3 class="card-title">HTML & CSS Product Page Component</h3>
+          <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="project-tags">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">Responsive Design</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/javiarnd/cs300-assignment-1" target="_blank" rel="noopener noreferrer" class="card-btn">GitHub</a>
+            <a href="https://javiarnd.github.io/cs300-assignment-1" target="_blank" rel="noopener noreferrer" class="card-btn">Live Demo</a>
+          </div>
+        </span>
+        <span class="project-card">
+          <h3 class="card-title">Responsive Landing Page</h3>
+          <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="project-tags">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">CSS Grid</span>
+            <span class="skill-tag">Flexbox</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/javiarnd/cs300-assignment-2" target="_blank" rel="noopener noreferrer" class="card-btn">GitHub</a>
+            <a href="https://javiarnd.github.io/cs300-assignment-2" target="_blank" rel="noopener noreferrer" class="card-btn">Live Demo</a>
+          </div>
+        </span>
+        <span class="project-card">
+          <h3 class="card-title">DiscVault</h3>
+          <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="project-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">OOP</span>
+            <span class="skill-tag">SQL & MySQL</span>
+            <span class="skill-tag">Data Structures</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/javiarnd/DiscVault" target="_blank" rel="noopener noreferrer" class="card-btn">GitHub</a>
+          </div>
+        </span>
+      </div>
     </section>
     <section id="skills">
-      <!-- Skills: the skills your work samples show, each connected to a sample. -->
+      <h2 class="skills-subtitle">//Skills</h2>
+      <div class="skills-category-container">
+        <div class="skills-category">
+          <h3 class="category-title">Languages</h3>
+          <div class="skill-tags-group">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">HTML / CSS</span>
+          </div>
+        </div>
+        <div class="skills-category">
+          <h3 class="category-title">Tools & Databases</h3>
+          <div class="skill-tags-group">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">phpMyAdmin</span>
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">IntelliJ</span>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="contact">
-      <!-- Contact: a professional way to reach you, such as a profile link. -->
-    </section>
-    <section id="resume">
-      <!-- Resume: a resume section or a link to a downloadable resume PDF. -->
-    </section>
+      <div class="footer-links">
+        <a href="https://github.com/javiarnd">
+         <img src="images/github.svg" alt="">
+        </a>
+      <a href="https://www.linkedin.com/in/javier-aranda-52778a27a/">
+        <img src="images/linkedin.svg" alt="">
+      </a>
+      <a href="mailto:jaranda070407@gmail.com">
+        <img src="images/gmail.svg" alt="">
+      </a>
+      <div class="resume-wrapper">
+      <a href="download-files/placeholder.pdf" download class="resume-download">
+        <img src="images/briefcase-svgrepo-com.svg" alt="">
+      </a>
+      <div class="resume-hint">
+        <p>download my resume here! <span class="arrow">↲</span></p>
+      </div>
+    </div>
+  </div>
+  </section>
   </main>
   <footer>
-    <!-- Footer: your name, the year, and your profile links. -->
+  <p>&copy; <span id="copyright-year"></span> Javier Aranda. All rights reserved.</p>
   </footer>
   <script src="app.js"></script>
 </body>
 </html>
+

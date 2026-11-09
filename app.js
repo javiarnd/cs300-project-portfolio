@@ -26,3 +26,6 @@ document.querySelectorAll('#main-nav a').forEach(link => {
     });
   }
 });
+
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
