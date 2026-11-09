@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="portfolio-logo-container">
+<div class="portfolio-logo-container">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 787.311 190.157">
         <defs>
            <style>
@@ -41,12 +41,14 @@
   <span id="terminal-directory" class="terminal-directory">/portfolio</span>
   <span class="blink-box-terminal">❚</span>
 </h2>
+
   <div id="menu-toggle">
     <span class="hamburger-toggle"></span>
     <span class="hamburger-toggle"></span>
     <span class="hamburger-toggle"></span>
   </div>
 </div>
+
   <nav id="main-nav" class="main-nav">
     <ul>
       <li><a href="#header-reference">Introduction<span class="blink-box-nav">❚</span></a></li>
@@ -57,24 +59,55 @@
       <li><a href="#resume">Resume<span class="blink-box-nav">❚</span></a></li>
     </ul>
   </nav>
+
 </header>
-  <main>
+
+  <main class="main-container">
+    <div class="desktop-left-pane">
     <section id="introduction">
       <h1 class="intro-name">Javier Aranda</h1>
             <br>&nbsp;<br>
-        <p class="intro-headline">Computer Science Student & Aspiring Software Developer <br><b>[B.S. Computer Science incoming 📟]</b><br></p>
+        <p class="intro-headline">Computer Science Student & Aspiring Software Engineer <br><b>[B.S. Computer Science incoming 📟]</b><br></p>
             <br>&nbsp;<br>
           <p class="intro-text-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Hi! I am a student at Northeastern Illinois University in Chicago, Illinois and I am currently pursuing my B.S. in Computer Science here. I am Junior and expected to graduate in December of 2027.
+            In the meantime, I am open to accepting internship roles and building all sorts of coding projects that reflect my experience along the way.
           </p>
         <a href="#projects" class="intro-button">▼ View My Work ▼</a>
     </section>
-    <section id="about">
+
+      <section id="contact">
+      <div class="footer-links">
+        <a href="https://github.com/javiarnd">
+         <img src="images/github.svg" alt="">
+        </a>
+      <a href="https://www.linkedin.com/in/javier-aranda-52778a27a/">
+        <img src="images/linkedin.svg" alt="">
+      </a>
+      <a href="mailto:jaranda070407@gmail.com">
+        <img src="images/gmail.svg" alt="">
+      </a>
+      <div class="resume-wrapper">
+      <a href="download-files/Javier Aranda Resume Portfolio.pdf" download class="resume-download">
+        <img src="images/briefcase-svgrepo-com.svg" alt="">
+      </a>
+      <div class="resume-hint">
+        <p>download my resume here! <span class="arrow">↲</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+  <div class="desktop-right-pane">
+     <section id="about">
      <h2 class="about-subtitle">//About</h2>
       <p class="about-text-content">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        I am a creator at heart. And if you're anything like me, sometimes the ambitions of big visions get the best of me. Nevertheless, I focus on channeling that energy back into what I can do and what I can push myself to do. As a result,
+        I create meaningful work that I take pride in. Example: this exact portfolio you're looking at right now. It is the unique projects like these that strengthen my fascination for developing, and I can't wait to keep filling this portfolio with more.
         <br>&nbsp;<br>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Aside from developing work I love music and am a multi-instrumentalist with my favorite instruments being the guitar and drums. Some of my favorite artist include The Strokes, Radiohead, and The Beatles. I dabble in a bit or art as well. 
+        Overall I am very appreciative of the arts and it is very interesting to see how this creative lens has its unique approach in the world of developing.
       </p>
     </section>
     <section id="projects">
@@ -82,7 +115,7 @@
       <div class="project-card-container">
         <span class="project-card">
           <h3 class="card-title">HTML & CSS Product Page Component</h3>
-          <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="card-description">A first dive into the world of semantic HTML. Drawing inspiration from a typical marketplace post and bringing it to life.</p>
           <div class="project-tags">
             <span class="skill-tag">HTML</span>
             <span class="skill-tag">CSS</span>
@@ -95,7 +128,7 @@
         </span>
         <span class="project-card">
           <h3 class="card-title">Responsive Landing Page</h3>
-          <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="card-description">Mobile-first interactive design. CSS Grid and Flexbox implementations where most effective. </p>
           <div class="project-tags">
             <span class="skill-tag">JavaScript</span>
             <span class="skill-tag">CSS Grid</span>
@@ -108,7 +141,7 @@
         </span>
         <span class="project-card">
           <h3 class="card-title">DiscVault</h3>
-          <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="card-description">[In progress...] Make the most of what you paid for. Bring your own physical media movie library into your Smart TV.</p>
           <div class="project-tags">
             <span class="skill-tag">Java</span>
             <span class="skill-tag">OOP</span>
@@ -146,27 +179,7 @@
         </div>
       </div>
     </section>
-    <section id="contact">
-      <div class="footer-links">
-        <a href="https://github.com/javiarnd">
-         <img src="images/github.svg" alt="">
-        </a>
-      <a href="https://www.linkedin.com/in/javier-aranda-52778a27a/">
-        <img src="images/linkedin.svg" alt="">
-      </a>
-      <a href="mailto:jaranda070407@gmail.com">
-        <img src="images/gmail.svg" alt="">
-      </a>
-      <div class="resume-wrapper">
-      <a href="download-files/placeholder.pdf" download class="resume-download">
-        <img src="images/briefcase-svgrepo-com.svg" alt="">
-      </a>
-      <div class="resume-hint">
-        <p>download my resume here! <span class="arrow">↲</span></p>
-      </div>
-    </div>
-  </div>
-  </section>
+</div>
   </main>
   <footer>
   <p>&copy; <span id="copyright-year"></span> Javier Aranda. All rights reserved.</p>
