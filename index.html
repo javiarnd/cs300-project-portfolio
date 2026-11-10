@@ -9,29 +9,11 @@
   <link rel="stylesheet" href="styles.css">
   <title>Javier Aranda: Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="toggle-theme.css">
 </head>
 <body>
 <div class="portfolio-logo-container">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 787.311 190.157">
-        <defs>
-           <style>
-      .cls-1{fill:#d76a38;stroke:#000000;stroke-miterlimit:10}
-      .cls-2{fill:#c53829;stroke:#000000;stroke-miterlimit:10}
-      .cls-3{fill:#f5c058;stroke:#000000;stroke-miterlimit:10}
-      .cls-4{fill:#333333;stroke:#ffffff;stroke-miterlimit:10}
-           </style>
-        </defs>
-  <title>light-mode-logo</title>
-  <g id="light_mode_logo" data-name="light-mode-logo">
-    <rect x="0.5" y="66.243" width="633.027" height="57.015" class="cls-1"/>
-    <rect x="0.5" y="0.58" width="620.384" height="57.015" class="cls-2"/>
-    <rect x="0.5" y="132.642" width="596.336" height="57.015" class="cls-3"/>
-    <g>
-      <path d="M786.657 189.657 L735.336 0.58 L703.298 0.58 L571.288 189.657 L616.082 189.657 L650.79 140.789 L728.81 140.789 L741.863 189.657 Z M723.244 104.079 L676.373 104.079 L711.971 47.023 Z" class="cls-4"/>
-    </g>
-    <path d="M597.195 109.226 L614.644 0.501 L656.226 0.646 L638.528 110.631 C629.715 163.315 599.626 189.657 565.283 189.657 C534.283 189.657 512.401 167.53 512.401 135.919 C512.401 132.758 512.705 128.544 513.009 123.626 L554.646 123.626 L554.95 126.085 C556.47 138.027 561.636 143.295 571.666 143.295 C585.342 143.295 593.548 132.407 597.195 109.226 Z" class="cls-4"/>
-    </g>
-  </svg>
+  <img id="portfolio-logo" src="images/light-mode-logo.svg" alt="Javier Aranda">
   </div>
 <header id="header-reference" class="terminal-style-header">
 <div class="terminal-style-text-container">
@@ -42,10 +24,15 @@
   <span class="blink-box-terminal">❚</span>
 </h2>
 
+<div class="header-controls">
+  <button id="theme-toggle-mobile" class="theme-toggle-btn mobile-theme-btn">
+  <img src="images/moon-svgrepo-com.svg" alt="" class="theme-icon">
+</button>
   <div id="menu-toggle">
     <span class="hamburger-toggle"></span>
     <span class="hamburger-toggle"></span>
     <span class="hamburger-toggle"></span>
+    </div>
   </div>
 </div>
 
@@ -57,9 +44,13 @@
       <li><a href="#skills">Skills<span class="blink-box-nav">❚</span></a></li>
       <li><a href="#contact">Contact<span class="blink-box-nav">❚</span></a></li>
       <li><a href="#resume">Resume<span class="blink-box-nav">❚</span></a></li>
+      <li>
+        <button id="theme-toggle-desktop" class="theme-toggle-btn desk-theme-btn">
+          <img src="images/moon-svgrepo-com.svg" alt="" class="theme-icon">
+        </button>
+      </li>
     </ul>
   </nav>
-
 </header>
 
   <main class="main-container">
@@ -175,6 +166,7 @@
             <span class="skill-tag">Git / GitHub</span>
             <span class="skill-tag">VS Code</span>
             <span class="skill-tag">IntelliJ</span>
+            <span class="skill-tag">Xcode</span>
           </div>
         </div>
       </div>

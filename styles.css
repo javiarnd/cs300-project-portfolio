@@ -31,14 +31,15 @@ html {
 }
 
 body {
-    background-color: rgba(226, 223, 210, 1);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
     margin: 0;
     overflow-x: hidden;
 }
 
 h2 {
     font-family: 'Lucida Console', monospace;
-    color: darkolivegreen;
+    color: var(--heading-green);
 }
 
 main {
@@ -46,7 +47,7 @@ main {
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
-    color: #333333;
+    color: var(--text-primary);
 }
 
 @keyframes fadeInDown {
@@ -87,7 +88,7 @@ main {
 }
 
 .terminal-style-text-container {
-    background-color: rgba(214, 210, 196, 1);
+    background-color: var(--bg-secondary);
     justify-content: space-between;
     align-items: center;
     display: flex;
@@ -101,6 +102,7 @@ main {
     position: sticky;
     top: 0;
     z-index: 1000;
+
 }
 
 @keyframes slideInFromLeft {
@@ -124,14 +126,14 @@ main {
 }
 
 .terminal-user { 
-    color: #333333; 
+    color: var(--text-primary);
 }
 .terminal-command { 
-    color: #1d2c90; 
+    color: var(--command-blue);
 }
 
 .terminal-directory { 
-    color: #c53829; 
+    color: var(--accent-red);
 }
 
 .blink-box-terminal {
@@ -148,9 +150,7 @@ main {
 }
 
 .blink-box-nav.active { 
-    display: inline-block;
     transform: translateY(-9%) translateX(-15%) scale(1.2);
-    animation: blink 1s steps(1, start) infinite;
     color: #1d2c90;
 }
 
@@ -160,16 +160,19 @@ main {
 }
 
 li { 
-    list-style: none; margin: 0; 
+    list-style: none; 
+    margin: 0; 
 }
 
 a { 
-    display: inline-block; color: #c53829; text-decoration: none; 
+    display: inline-block; 
+    color: var(--accent-red);
+    text-decoration: none; 
 }
 
 .main-nav ul {
     font-weight: bold;
-    background-color: rgba(214, 210, 196, 1);
+    background-color: var(--bg-secondary);
     font-family: 'Lucida Console', monospace;
     width: 100%;
     margin: 0rem;
@@ -191,13 +194,15 @@ a {
     color: #1d2c90;
 }
 
-#menu-toggle { cursor: pointer; }
+#menu-toggle { 
+    cursor: pointer; 
+}
 
 #menu-toggle .hamburger-toggle {
     display: block;
     width: 25px;
     height: 2px;
-    background-color: #333333;
+    background-color: var(--text-primary);
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
 }
@@ -272,8 +277,8 @@ a {
 
     .terminal-style-header {
         display: flex;
-        background-color: rgba(214, 210, 196, 1);
-        border: .5px solid #333333;
+        background-color: var(--bg-secondary);
+        border: .5px solid var(--border-color);
     }
 
     .terminal-style-text-container {
@@ -301,11 +306,8 @@ a {
 
     .main-container {
         display: grid;
-        grid-template-columns: 1fr 1.2fr;
+        grid-template-columns: 1fr 1fr;
         align-items: start; 
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 0 2rem;
         box-sizing: border-box;
     }
 
@@ -313,19 +315,19 @@ a {
         position: sticky;
         top: 0;
         height: 100vh;
+        padding: 3rem 3rem 4rem 3rem;
         overflow-y: hidden; 
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
-        padding: 3rem 2rem 3rem 0;
         z-index: 10;
     }
 
     .desktop-right-pane {
         display: flex;
         flex-direction: column;
-        gap: 5rem;
-        padding: 3rem 0 4rem 3rem;
+        gap: 3rem;
+        padding: 3rem 3rem 4rem 3rem;
         box-sizing: border-box;
     }
     .desktop-right-pane footer {
@@ -340,7 +342,7 @@ a {
 }
 
 .intro-name {
-    margin: 1rem 0rem;
+    margin: 0rem 0rem 1rem 0rem;
     padding: 0;
     font-family: "Tiny5 Duo", sans-serif;
     font-weight: 400;
@@ -568,3 +570,4 @@ footer {
     border-color: darkgreen;
     transform: translateY(-2px);
 }
+
